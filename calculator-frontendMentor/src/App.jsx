@@ -29,23 +29,31 @@ function App() {
   }
 
   const addFunc = () => {
-    setCalcBus(prevCalcBus => prevCalcBus + display + '+');
-    setDisplay('');
+    if (display) {
+      setCalcBus(prevCalcBus => prevCalcBus + display + '+');
+      setDisplay('');
+    }
   }
 
   const subtractFunc = () => {
-    setCalcBus(prevCalcBus => prevCalcBus + display + '-');
-    setDisplay('');
+    if (display) {
+      setCalcBus(prevCalcBus => prevCalcBus + display + '-');
+      setDisplay('');
+    }
   }
 
   const splitFunc = () => {
-    setCalcBus(prevCalcBus => prevCalcBus + display + '/');
-    setDisplay('');
+    if (display) {
+      setCalcBus(prevCalcBus => prevCalcBus + display + '/');
+      setDisplay('');
+    }
   }
 
   const multiplyFunc = () => {
-    setCalcBus(prevCalcBus => prevCalcBus + display + '*');
-    setDisplay('');
+    if (display) {
+      setCalcBus(prevCalcBus => prevCalcBus + display + '*');
+      setDisplay('');
+    }
   }
 
   const resultFunc = () => {
