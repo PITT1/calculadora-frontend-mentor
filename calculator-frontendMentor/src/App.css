@@ -1,0 +1,451 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  /*backgrounds
+  --bg-theme-1: hsl(222, 26%, 31%);
+  --bg-theme-2: hsl(0, 0%, 90%);
+  --bg-theme-3: hsl(268, 75%, 9%);
+  
+
+  --screen-background: hsl(224, 36%, 15%);
+  --keypad-background: hsl(223, 31%, 20%);
+
+  --key-background: hsl(225, 21%, 49%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-background-toggle-equals: hsl(6, 63%, 50%);
+  --key-shadow-equals: hsl(6, 70%, 34%);
+
+  --key-background-numeric: hsl(30, 25%, 89%);
+  --key-background-numeric-shadow: hsl(28, 16%, 65%);
+
+
+  --text-color-dark: hsl(221, 14%, 31%);
+  --text-color-light: hsl(0, 0%, 100%);
+
+
+  --screen-background-2: hsl(0, 0%, 90%);
+  --keypad-background-2: hsl(0, 5%, 81%);
+
+  --key-background-2: hsl(185, 42%, 37%);
+  --key-shadow-2: hsl(185, 58%, 25%);
+  --key-background-toggle-equals-2: hsl(25, 98%, 40%);
+  --key-shadow-equals-2: hsl(25, 99%, 27%);
+
+
+  --text-color-dark-2: hsl(60, 10%, 19%);
+  --text-color-light-2: hsl(0, 0%, 100%);
+
+
+  --screen-background-3: hsl(268, 75%, 9%);
+  --keypad-background-3: hsl(268, 71%, 12%);
+
+  --key-background-3: hsl(281, 89%, 26%);
+  --key-shadow-3: hsl(285, 91%, 52%);
+  --key-background-toggle-equals-3: hsl(176, 100%, 44%);
+  --key-shadow-equals-3: hsl(177, 92%, 70%);
+
+  --text-color-dark-3: hsl(52, 100%, 62%);
+  --text-color-light-3: hsl(0, 0%, 100%);
+  --text-color-very-dark-3: hsl(198, 20%, 13%);*/
+}
+
+.selector-theme-1 {
+  --bg-theme: hsl(222, 26%, 31%);
+  --screen-background: hsl(224, 36%, 15%);
+  --keypad-background: hsl(223, 31%, 20%);
+  --key-background: hsl(225, 21%, 49%);
+  --key-func-hover: hsl(224, 35%, 68%);
+  --key-shadow: hsl(224, 28%, 35%);
+  --key-background-num: hsl(30, 25%, 89%);
+  --key-shadow-num: hsl(28, 16%, 65%);
+  --key-background-toggle-equals: hsl(6, 63%, 50%);
+  --key-shadow-equals: hsl(6, 70%, 34%);
+  --key-background-numeric: hsl(30, 25%, 89%);
+  --key-background-numeric-shadow: hsl(28, 16%, 65%);
+  --text-color-dark: hsl(221, 14%, 31%);
+  --text-color-light: hsl(0, 0%, 100%);
+  --text_color-screen: hsl(0, 0%, 100%);
+  --text-equals-color: hsl(0, 0%, 100%);
+  --key-bg-hover: hsl(0, 0%, 100%);
+  --key-equals-hover: hsl(6, 86%, 61%);
+}
+
+.selector-theme-2 {
+  --bg-theme: hsl(0, 0%, 90%);
+  --screen-background: hsl(0, 0%, 95%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --key-background: hsl(185, 42%, 37%);
+  --key-func-hover: hsl(185, 43%, 57%);
+  --key-background-num: hsl(30, 25%, 89%);
+  --key-shadow-num: hsl(28, 16%, 65%);
+  --key-shadow: hsl(185, 58%, 25%);
+  --key-background-toggle-equals: hsl(25, 98%, 40%);
+  --key-shadow-equals: hsl(25, 99%, 27%);
+  --text-color-dark: hsl(60, 10%, 19%);
+  --text-color-light: hsl(0, 0%, 100%);
+  --text_color-screen: hsl(60, 10%, 19%);
+  --text-equals-color: hsl(0, 0%, 100%);
+  --key-bg-hover: hsl(0, 0%, 100%);
+  --key-equals-hover: hsl(25, 80%, 61%);
+}
+
+.selector-theme-3 {
+  --bg-theme: hsl(268, 75%, 9%);
+  --screen-background: hsl(268, 71%, 12%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --key-background: hsl(281, 89%, 26%);
+  --key-func-hover: hsl(281, 89%, 36%);
+  --key-background-num: hsl(281, 90%, 15%);
+  --key-shadow-num: hsl(285, 91%, 52%);
+  --key-shadow: hsl(285, 91%, 52%);
+  --key-background-toggle-equals: hsl(176, 100%, 44%);
+  --key-shadow-equals: hsl(177, 92%, 70%);
+  --text-color-dark: hsl(52, 100%, 62%);
+  --text-color-light: hsl(0, 0%, 100%);
+  --text-color-very-dark: hsl(198, 20%, 13%);
+  --text_color-screen: hsl(52, 100%, 62%);
+  --text-equals-color: hsl(198, 20%, 13%);
+  --key-bg-hover: hsl(285, 79%, 35%);
+  --key-equals-hover:hsl(177, 92%, 70%);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transition: ease-in-out 0.2s;
+  background-color: var(--bg-theme);
+}
+
+.container {
+  height: auto;
+  width: auto;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head h1 {
+  font-size: 30px;
+  color: var(--text_color-screen);
+  line-height: 1.1;
+  margin: auto 10px;
+}
+
+.display {
+  margin: 20px 0px;
+  height: 120px;
+  width: 100%;
+  background-color: var(--screen-background);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0px;
+  font-size: 2.5em;
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+}
+
+.display h2 {
+  margin: 0 20px;
+  color: var(--text_color-screen);
+}
+
+.key-pad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  background-color: var(--keypad-background);
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+
+.key-num {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  background-color: var(--key-background-num);
+  color: var(--text-color-dark);
+  box-shadow: 0px 3px var(--key-shadow-num);
+}
+
+.key-num:hover {
+  background-color: var();
+  outline: none;
+  background-color: var(--key-bg-hover);
+}
+
+.del-btn {
+  background-color: var(--key-background);
+  box-shadow: 0px 3px var(--key-shadow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.del-btn:hover {
+  background-color: var(--key-func-hover);
+  outline: none;
+  border-color: hsla(0, 0%, 100%, 0);
+}
+
+.equals-btn {
+  background-color: var(--key-background-toggle-equals);
+  box-shadow: 0px 3px var(--key-shadow-equals);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--text-equals-color);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.equals-btn:hover {
+  background-color: var(--key-equals-hover);
+  outline: none;
+  border-color: hsla(0, 0%, 100%, 0);
+}
+
+.reset-grid {
+  grid-column: span 2;
+}
+
+.equals-grid {
+  grid-column: span 2;
+}
+
+.theme {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.theme h2 {
+  margin-right: 20px;
+  color: var(--text_color-screen);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.theme-btn {
+  position: relative;
+  background-color: var(--keypad-background);
+  box-shadow: 0px 3px var(--key-shadow);
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  font-size: 0.7em;
+}
+
+.theme-btn:hover {
+  outline: none;
+  border-color: hsla(0, 0%, 100%, 0);
+}
+
+.theme-btn:focus {
+  outline: none;
+  border-color: hsla(0, 0%, 100%, 0);
+}
+
+.theme-1-btn{
+  border-radius: 50px 0 0 50px;
+}
+
+.theme-1-btn::before {
+  content: "1";
+  color: var(--text_color-screen);
+  font-size: 14px;
+  position: absolute;
+  top: -20px;
+}
+
+.theme-2-btn{
+  border-radius: 0;
+}
+
+.theme-2-btn::before {
+  content: "2";
+  color: var(--text_color-screen);
+  font-size: 14px;
+  position: absolute;
+  top: -20px;
+}
+
+.theme-3-btn{
+  border-radius: 0px 50px 50px 0px;
+}
+
+.theme-3-btn::before {
+  content: "3";
+  color: var(--text_color-screen);
+  font-size: 14px;
+  position: absolute;
+  top: -20px;
+}
+
+.theme .selector {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: var(--key-shadow-equals);
+  border-radius: 50px;
+  pointer-events: none;
+  transition: ease-in-out 0.2s;
+}
+
+.selector-theme-1 {
+  left: 65px;
+}
+
+.selector-theme-2 {
+  left: 93px;
+}
+
+.selector-theme-3 {
+  left: 122px;
+}
+
+@media (max-width: 650px) {
+  .head h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    margin: 10px;
+  }
+
+  .display {
+    height: 100px;
+    font-size: 2em;
+  }
+
+  .key-pad {
+    padding: 20px 20px;
+  }
+
+  .key-num {
+    font-size: 1.8em;
+  }
+
+  .del-btn {
+    font-size: 1.8em;
+  }
+
+  .equals-btn {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 490px) {
+  .head h1 {
+    font-size: 18px;
+  }
+
+  .display {
+    height: 80px;
+    font-size: 1.8em;
+    width: 100%;
+  }
+
+  .key-pad {
+    padding: 15px 15px;
+  }
+
+  .key-num {
+    border-radius: 5px;
+    font-size: 1.6em;
+    padding: 0.4em 0.2em;
+  }
+
+  .del-btn {
+    border-radius: 5px;
+    font-size: 1.6em;
+    padding: 0.4em 0.2em;
+  }
+
+  .equals-btn {
+    font-size: 1.6em;
+    border-radius: 5px;
+  }
+
+  .theme h2 {
+    font-size: 8px;
+  }
+
+  .theme-btn {
+    height: 25px;
+    font-size: 0.6em;
+  }
+
+  .theme-1-btn::before {
+    font-size: 12px;
+  }
+
+  .theme-2-btn::before {
+    font-size: 12px;
+  }
+
+  .theme-3-btn::before {
+    font-size: 12px;
+  }
+
+  .selector {
+    height: 15px;
+    width: 15px;
+  }
+
+  .selector-theme-1 {
+    left: 55px;
+  }
+
+  .selector-theme-2 {
+    left: 80px;
+  }
+
+  .selector-theme-3 {
+    left: 105px;
+  }
+}
